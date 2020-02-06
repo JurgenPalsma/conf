@@ -1,0 +1,15 @@
+#!/bin/sh
+
+FILE="./.gitignore"
+
+/bin/cat <<EOM >$FILE
+.vscode/
+**/ipynb_checkpoints/
+*.ipynb
+/res/*
+**/tmp/
+**/__pycache__/
+**.pyc
+**.DS_Store
+**/*.egg-info/
+EOM
